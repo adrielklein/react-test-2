@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    ReactGA.initialize("test-id-here");
+    ReactGA.initialize("GTM-TSVM3FWS");
   }, [])
 
   return (
