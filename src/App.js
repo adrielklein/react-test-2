@@ -1,13 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactGA from "react-ga4";
+import { useEffect } from 'react';
+
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize("test-id-here");
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload!!!
         </p>
         <a
           className="App-link"
