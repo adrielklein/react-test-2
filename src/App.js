@@ -1,14 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import ReactGA from "react-ga4";
+import TagManager from 'react-gtm-module';
 import { useEffect } from 'react';
 
 
 function App() {
 
   useEffect(() => {
-    ReactGA.initialize("GTM-TSVM3FWS");
-  }, [])
+    const tagManagerArgs = {
+        gtmId: 'GTM-TSVM3FWS'
+    };
+    TagManager.initialize(tagManagerArgs);
+  }, []);
 
   return (
     <div className="App">
