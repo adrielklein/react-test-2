@@ -19,7 +19,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <button onClick={() => {window.alert('hello world')}}>Click on the button</button>
         <p>
-          Edit <code>src/App.js</code> and save to reload!!!
+          Edit <code>src/App.js</code> and save to reload it
         </p>
         <a
           className="App-link"
